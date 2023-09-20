@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+  </head>
+  <body>
+    <!-- Создаём форму регистрации, которая будет отправлять данные для обработки 
+      скриптом signup-form-processing.php
+     -->
+    <h1>Sign up</h1>
+    <form action="./signup-form-processing.php" method="post" novalidate>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="password_confirm">Confirm password</label>
+        <input type="password" name="password_confirm" id="password_confirm" />
+      </div>
+      <button type="submit">Signup</button>
+    </form>
+  </body>
+</html>
